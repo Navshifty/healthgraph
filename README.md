@@ -78,7 +78,7 @@ ICD-9 codes, PCA) is fitted on the training rows only.
 ## Deployment
 
 **Live (AWS EC2, free-tier t3.micro, ap-south-1, Elastic IP):** UI http://3.7.153.70/ui · API docs http://3.7.153.70/docs
-· switch on/off: PowerShell `.deployws_power.ps1 start|stop|status`, or Git Bash `bash deploy/aws_power.sh start|stop|status` (the address stays the same)
+· switch on/off: PowerShell `.\deploy\aws_power.ps1 start|stop|status`, or Git Bash `bash deploy/aws_power.sh start|stop|status` (the address stays the same)
 
 ```bash
 # local API + UI
