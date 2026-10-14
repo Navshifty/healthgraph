@@ -1,0 +1,540 @@
+{
+ "macros": {
+  "aurocGCN": "0.638",
+  "aurocsdGCN": "0.027",
+  "auprcGCN": "0.149",
+  "eceGCN": "0.006",
+  "brierGCN": "0.080",
+  "sensGCN": "47.6",
+  "ppvGCN": "14.0",
+  "topdecGCN": "19.0",
+  "aurocGAT": "0.635",
+  "aurocsdGAT": "0.028",
+  "auprcGAT": "0.151",
+  "eceGAT": "0.005",
+  "brierGAT": "0.080",
+  "sensGAT": "49.2",
+  "ppvGAT": "13.7",
+  "topdecGAT": "20.4",
+  "aurocLGBM": "0.629",
+  "aurocsdLGBM": "0.017",
+  "auprcLGBM": "0.159",
+  "eceLGBM": "0.006",
+  "brierLGBM": "0.080",
+  "sensLGBM": "45.7",
+  "ppvLGBM": "14.1",
+  "topdecLGBM": "21.9",
+  "aurocLR": "0.644",
+  "aurocsdLR": "0.020",
+  "auprcLR": "0.153",
+  "eceLR": "0.006",
+  "brierLR": "0.080",
+  "sensLR": "52.0",
+  "ppvLR": "14.2",
+  "topdecLR": "19.5",
+  "aurocMLP": "0.642",
+  "aurocsdMLP": "0.019",
+  "auprcMLP": "0.154",
+  "eceMLP": "0.006",
+  "brierMLP": "0.080",
+  "sensMLP": "48.9",
+  "ppvMLP": "15.3",
+  "topdecMLP": "20.8",
+  "aurocRF": "0.633",
+  "aurocsdRF": "0.021",
+  "auprcRF": "0.167",
+  "eceRF": "0.006",
+  "brierRF": "0.080",
+  "sensRF": "49.1",
+  "ppvRF": "13.8",
+  "topdecRF": "21.9",
+  "aurocXGB": "0.616",
+  "aurocsdXGB": "0.030",
+  "auprcXGB": "0.156",
+  "eceXGB": "0.003",
+  "brierXGB": "0.080",
+  "sensXGB": "47.7",
+  "ppvXGB": "13.1",
+  "topdecXGB": "19.7",
+  "benchPOneLR": "0.672",
+  "benchaprPOneLR": "0.211",
+  "benchPOneXGB": "0.681",
+  "benchaprPOneXGB": "0.226",
+  "benchPOneLGBM": "0.681",
+  "benchaprPOneLGBM": "0.227",
+  "benchNPOne": "101,766",
+  "benchOverlapPOne": "5,047",
+  "benchPTwoLR": "0.676",
+  "benchaprPTwoLR": "0.214",
+  "benchPTwoXGB": "0.680",
+  "benchaprPTwoXGB": "0.222",
+  "benchPTwoLGBM": "0.690",
+  "benchaprPTwoLGBM": "0.233",
+  "benchNPTwo": "101,766",
+  "benchOverlapPTwo": "0",
+  "benchPThreeLR": "0.652",
+  "benchaprPThreeLR": "0.162",
+  "benchPThreeXGB": "0.649",
+  "benchaprPThreeXGB": "0.165",
+  "benchPThreeLGBM": "0.655",
+  "benchaprPThreeLGBM": "0.170",
+  "benchNPThree": "69,973",
+  "benchOverlapPThree": "0",
+  "benchPFourLR": "0.644",
+  "benchaprPFourLR": "0.153",
+  "benchPFourXGB": "0.616",
+  "benchaprPFourXGB": "0.156",
+  "benchPFourLGBM": "0.629",
+  "benchaprPFourLGBM": "0.159",
+  "benchNPFour": "20,000",
+  "benchOverlapPFour": "0",
+  "aurocPFourGAT": "0.635",
+  "ablAll": "0.635",
+  "ablNoSim": "0.625",
+  "ablNoDx": "0.641",
+  "ablNoSpec": "0.638",
+  "ablNoEdges": "0.640",
+  "homSim": "0.101",
+  "homLiftSim": "1.13",
+  "edgesSim": "278,192",
+  "homDx": "0.097",
+  "homLiftDx": "1.08",
+  "edgesDx": "164,124",
+  "homSpec": "0.091",
+  "homLiftSpec": "1.01",
+  "edgesSpec": "162,674",
+  "nEdges": "604,990",
+  "nFeatures": "189",
+  "nRef": "20,000",
+  "prevalence": "9.0",
+  "pcaVar": "81",
+  "threshold": "10.4",
+  "besthidden": "32",
+  "bestheads": "2",
+  "bestlayers": "3",
+  "bestdropout": "0.46",
+  "bestedgedropout": "0.36",
+  "bestlr": "0.0045",
+  "bestweightdecay": "0.0018",
+  "bestKsim": "10",
+  "bestKcode": "5",
+  "bestKgroup": "8",
+  "nTrials": "16",
+  "nPruned": "5",
+  "nComplete": "9",
+  "nInterrupted": "2",
+  "bestValAuprc": "0.146",
+  "attSim": "48",
+  "attDx": "26",
+  "attSpec": "21",
+  "attSelf": "4",
+  "attLiftPos": "1.02",
+  "attLiftNeg": "1.00",
+  "shapModel": "XGBoost",
+  "synGCN": "0.763",
+  "synaprGCN": "0.375",
+  "synGAT": "0.767",
+  "synaprGAT": "0.376",
+  "synLGBM": "0.729",
+  "synaprLGBM": "0.306",
+  "synLR": "0.733",
+  "synaprLR": "0.332",
+  "synMLP": "0.737",
+  "synaprMLP": "0.330",
+  "synOracle": "0.826",
+  "synaprOracle": "0.506",
+  "synRF": "0.732",
+  "synaprRF": "0.312",
+  "synXGB": "0.726",
+  "synaprXGB": "0.310",
+  "synablAll": "0.767",
+  "synablNoSpec": "0.732",
+  "synablNoSim": "0.772",
+  "synablNoDx": "0.770",
+  "synablNoEdges": "0.739",
+  "synHomLiftSpec": "1.54",
+  "subWorst": "prior inpatient visits = 2+",
+  "subWorstAuc": "0.505",
+  "subBest": "primary diagnosis = diabetes",
+  "subBestAuc": "0.719",
+  "subMaxCalGap": "5.7",
+  "errTPInp": "0.72",
+  "errTPRisk": "14.4",
+  "errTPN": "397",
+  "errFNInp": "0.06",
+  "errFNRisk": "7.4",
+  "errFNN": "410",
+  "errFPInp": "0.45",
+  "errFPRisk": "13.4",
+  "errFPN": "2,539",
+  "errTNInp": "0.03",
+  "errTNRisk": "6.8",
+  "errTNN": "5,654"
+ },
+ "main": [
+  [
+   "Logistic Regression",
+   "0.644±0.020",
+   "0.153±0.019",
+   "0.291",
+   "0.080",
+   "0.006",
+   "0.222",
+   "0.520",
+   "0.142",
+   "0.195"
+  ],
+  [
+   "Random Forest",
+   "0.633±0.021",
+   "0.167±0.020",
+   "0.291",
+   "0.080",
+   "0.006",
+   "0.215",
+   "0.491",
+   "0.138",
+   "0.219"
+  ],
+  [
+   "XGBoost",
+   "0.616±0.030",
+   "0.156±0.015",
+   "0.294",
+   "0.080",
+   "0.003",
+   "0.202",
+   "0.477",
+   "0.131",
+   "0.197"
+  ],
+  [
+   "LightGBM",
+   "0.629±0.017",
+   "0.159±0.016",
+   "0.292",
+   "0.080",
+   "0.006",
+   "0.213",
+   "0.457",
+   "0.141",
+   "0.219"
+  ],
+  [
+   "MLP (no graph)",
+   "0.642±0.019",
+   "0.154±0.017",
+   "0.292",
+   "0.080",
+   "0.006",
+   "0.229",
+   "0.489",
+   "0.153",
+   "0.208"
+  ],
+  [
+   "GCN",
+   "0.638±0.027",
+   "0.149±0.018",
+   "0.292",
+   "0.080",
+   "0.006",
+   "0.216",
+   "0.476",
+   "0.140",
+   "0.190"
+  ],
+  [
+   "HealthGAT",
+   "0.635±0.028",
+   "0.151±0.015",
+   "0.292",
+   "0.080",
+   "0.005",
+   "0.214",
+   "0.492",
+   "0.137",
+   "0.204"
+  ]
+ ],
+ "syn": [
+  [
+   "Logistic Regression",
+   "0.733±0.012",
+   "0.332±0.010",
+   "0.119",
+   "0.019",
+   "0.246"
+  ],
+  [
+   "Random Forest",
+   "0.732±0.025",
+   "0.312±0.040",
+   "0.120",
+   "0.025",
+   "0.203"
+  ],
+  [
+   "XGBoost",
+   "0.726±0.022",
+   "0.310±0.019",
+   "0.121",
+   "0.020",
+   "0.211"
+  ],
+  [
+   "LightGBM",
+   "0.729±0.017",
+   "0.306±0.016",
+   "0.120",
+   "0.017",
+   "0.220"
+  ],
+  [
+   "MLP (no graph)",
+   "0.737±0.007",
+   "0.330±0.005",
+   "0.119",
+   "0.020",
+   "0.244"
+  ],
+  [
+   "GCN",
+   "0.763±0.007",
+   "0.375±0.040",
+   "0.116",
+   "0.024",
+   "0.275"
+  ],
+  [
+   "HealthGAT",
+   "0.767±0.008",
+   "0.376±0.042",
+   "0.116",
+   "0.026",
+   "0.280"
+  ],
+  [
+   "Oracle (true risk)",
+   "0.826±0.011",
+   "0.506±0.043",
+   "0.102",
+   "0.022",
+   "0.344"
+  ]
+ ],
+ "sig": [
+  [
+   "Logistic Regression",
+   "0.658",
+   "[0.627, 0.692]",
+   "[0.141, 0.212]",
+   "-0.0085",
+   "0.844, 0.249, 0.350"
+  ],
+  [
+   "Random Forest",
+   "0.650",
+   "[0.617, 0.686]",
+   "[0.145, 0.218]",
+   "+0.0020",
+   "0.601, 0.753, 0.769"
+  ],
+  [
+   "XGBoost",
+   "0.632",
+   "[0.598, 0.667]",
+   "[0.130, 0.198]",
+   "+0.0191",
+   "0.072, 0.210, 0.565"
+  ],
+  [
+   "LightGBM",
+   "0.646",
+   "[0.614, 0.682]",
+   "[0.145, 0.221]",
+   "+0.0062",
+   "0.269, 0.675, 0.209"
+  ],
+  [
+   "MLP (no graph)",
+   "0.655",
+   "[0.620, 0.690]",
+   "[0.143, 0.217]",
+   "-0.0066",
+   "0.826, 0.111, 0.047"
+  ],
+  [
+   "GCN",
+   "0.657",
+   "[0.624, 0.691]",
+   "[0.140, 0.209]",
+   "-0.0023",
+   "0.868, 0.749, 0.120"
+  ],
+  [
+   "HealthGAT",
+   "0.657",
+   "[0.623, 0.691]",
+   "[0.139, 0.209]",
+   "",
+   ""
+  ]
+ ],
+ "bench": [
+  [
+   "Emi-Johnson & Nkrumah 2025",
+   "XGBoost",
+   "0.667"
+  ],
+  [
+   "Emi-Johnson & Nkrumah 2025",
+   "Logistic Regression",
+   "0.642"
+  ],
+  [
+   "Emi-Johnson & Nkrumah 2025",
+   "Random Forest",
+   "0.630"
+  ],
+  [
+   "Emi-Johnson & Nkrumah 2025",
+   "Deep neural network",
+   "0.579"
+  ],
+  [
+   "Salim & Ibrahim 2026",
+   "XGBoost (tuned)",
+   "0.664"
+  ],
+  [
+   "Salim & Ibrahim 2026",
+   "LightGBM",
+   "0.660"
+  ],
+  [
+   "Salim & Ibrahim 2026",
+   "Logistic Regression",
+   "0.657"
+  ],
+  [
+   "Salim & Ibrahim 2026",
+   "Random Forest",
+   "0.650"
+  ],
+  [
+   "Salim & Ibrahim 2026",
+   "Stacking ensemble",
+   "0.665"
+  ],
+  [
+   "P1: all encounters, random split (ours)",
+   "Logistic Regression",
+   "0.672±0.002"
+  ],
+  [
+   "P1: all encounters, random split (ours)",
+   "XGBoost",
+   "0.681±0.004"
+  ],
+  [
+   "P1: all encounters, random split (ours)",
+   "LightGBM",
+   "0.681±0.002"
+  ],
+  [
+   "P2: all encounters, patient-grouped (ours)",
+   "Logistic Regression",
+   "0.676±0.009"
+  ],
+  [
+   "P2: all encounters, patient-grouped (ours)",
+   "XGBoost",
+   "0.680±0.005"
+  ],
+  [
+   "P2: all encounters, patient-grouped (ours)",
+   "LightGBM",
+   "0.690±0.010"
+  ],
+  [
+   "P3: strict cohort (70k) (ours)",
+   "Logistic Regression",
+   "0.652±0.007"
+  ],
+  [
+   "P3: strict cohort (70k) (ours)",
+   "XGBoost",
+   "0.649±0.008"
+  ],
+  [
+   "P3: strict cohort (70k) (ours)",
+   "LightGBM",
+   "0.655±0.006"
+  ],
+  [
+   "P4: strict cohort (20k) (ours)",
+   "Logistic Regression",
+   "0.644±0.020"
+  ],
+  [
+   "P4: strict cohort (20k) (ours)",
+   "XGBoost",
+   "0.616±0.030"
+  ],
+  [
+   "P4: strict cohort (20k) (ours)",
+   "LightGBM",
+   "0.629±0.017"
+  ]
+ ],
+ "abl": [
+  [
+   "all relations",
+   "0.635±0.028",
+   "0.151±0.015"
+  ],
+  [
+   "without clinical-similarity",
+   "0.625±0.030",
+   "0.143±0.017"
+  ],
+  [
+   "without shared-diagnoses",
+   "0.641±0.017",
+   "0.153±0.011"
+  ],
+  [
+   "without shared-provider",
+   "0.638±0.027",
+   "0.152±0.014"
+  ],
+  [
+   "no edges (self-loops only)",
+   "0.640±0.022",
+   "0.154±0.013"
+  ]
+ ],
+ "synabl": [
+  [
+   "all relations",
+   "0.767±0.008"
+  ],
+  [
+   "without clinical-similarity",
+   "0.772±0.003"
+  ],
+  [
+   "without shared-diagnoses",
+   "0.770±0.011"
+  ],
+  [
+   "without shared-provider",
+   "0.732±0.010"
+  ],
+  [
+   "no edges (self-loops only)",
+   "0.739±0.007"
+  ]
+ ]
+}

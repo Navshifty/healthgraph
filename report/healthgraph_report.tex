@@ -126,7 +126,7 @@ strongly~\cite{zhu2020}. (4)~Few systems address inductive deployment for unseen
 \node[box=red!8, left=of cal] (eval) {Evaluation: AUROC/\\AUPRC, DeLong, DCA,\\subgroups, SHAP};
 \node[box=violet!10, left=of eval] (hpo) {Optuna TPE +\\pruning; MLflow\\tracking};
 \node[box=gray!10, left=of hpo] (base) {Baselines: LR, RF,\\XGBoost, LightGBM,\\MLP, GCN};
-\node[box=cyan!10, left=of base] (api) {FastAPI + Gradio\\inductive $L$-hop\\scoring; Docker/HF};
+\node[box=cyan!10, left=of base] (api) {FastAPI + Gradio\\inductive $L$-hop\\scoring; Docker/AWS};
 \draw[arr] (raw)--(coh); \draw[arr] (coh)--(fe); \draw[arr] (fe)--(pca); \draw[arr] (pca)--(g);
 \draw[arr] (g)--(gat); \draw[arr] (gat)--(cal); \draw[arr] (cal)--(eval);
 \draw[arr] (hpo)--(eval); \draw[arr] (base)--(hpo); \draw[arr] (eval.south) |- ++(0,-4mm) -| (api.south);
