@@ -1,0 +1,4 @@
+# LaTeX toolchain for the IEEE report: docker build -f report/Dockerfile.tex -t healthgraph-tex report
+FROM texlive/texlive:latest-medium
+RUN tlmgr update --self && tlmgr install ieeetran multirow
+WORKDIR /work

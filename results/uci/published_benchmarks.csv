@@ -1,0 +1,10 @@
+source,model,AUROC,protocol
+Emi-Johnson & Nkrumah 2025 [Cureus],XGBoost,0.667,"all encounters, 80/20 random split"
+Emi-Johnson & Nkrumah 2025 [Cureus],Logistic Regression,0.642,"all encounters, 80/20 random split"
+Emi-Johnson & Nkrumah 2025 [Cureus],Random Forest,0.63,"all encounters, 80/20 random split"
+Emi-Johnson & Nkrumah 2025 [Cureus],Deep neural network,0.579,"all encounters, 80/20 random split"
+Salim & Ibrahim 2026 [Healthcare],XGBoost (tuned),0.664,"all encounters, nested 5-fold CV"
+Salim & Ibrahim 2026 [Healthcare],LightGBM,0.66,"all encounters, nested 5-fold CV"
+Salim & Ibrahim 2026 [Healthcare],Logistic Regression,0.657,"all encounters, nested 5-fold CV"
+Salim & Ibrahim 2026 [Healthcare],Random Forest,0.65,"all encounters, nested 5-fold CV"
+Salim & Ibrahim 2026 [Healthcare],Stacking ensemble,0.665,"all encounters, nested 5-fold CV"

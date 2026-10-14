@@ -1,0 +1,10 @@
+# Minimal pinned runtime for the Docker image / Hugging Face Space (torch installed separately, CPU wheel).
+# Versions match the training environment so the pickled preprocessor loads identically.
+numpy==2.3.5
+pandas==2.3.3
+scikit-learn==1.8.0
+scipy==1.17.0
+fastapi==0.141.1
+uvicorn[standard]==0.53.0
+pydantic==2.13.5
+gradio==6.30.0

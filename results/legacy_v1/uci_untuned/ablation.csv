@@ -1,0 +1,5 @@
+model,AUROC,AUPRC
+all relations,0.632 +/- 0.019,0.171 +/- 0.018
+without clinical-similarity,0.634 +/- 0.018,0.170 +/- 0.016
+without shared-diagnoses,0.631 +/- 0.004,0.172 +/- 0.019
+without shared-provider,0.630 +/- 0.012,0.167 +/- 0.017

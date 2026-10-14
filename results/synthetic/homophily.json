@@ -1,0 +1,17 @@
+{
+  "clinical-similarity": {
+    "edges": 91448,
+    "same_label": 0.7691365584813227,
+    "pos_neighbour_rate_for_positives": 0.20679290652239254
+  },
+  "shared-diagnoses": {
+    "edges": 47278,
+    "same_label": 0.7443208257540506,
+    "pos_neighbour_rate_for_positives": 0.2028488525455025
+  },
+  "shared-provider": {
+    "edges": 88322,
+    "same_label": 0.7656529516994633,
+    "pos_neighbour_rate_for_positives": 0.2389881608941834
+  }
+}

@@ -1,0 +1,42 @@
+# HealthGraph experiment configuration: UCI Diabetes 130-US Hospitals, 30-day readmission.
+experiment: uci_diabetes
+output_dir: results/uci
+seeds: [0, 1, 2]
+
+data:
+  source: uci
+  path: data/uci/diabetic_data.csv
+  cohort: first            # first encounter per patient; "all" = benchmark protocol
+  max_patients: 20000      # stratified subsample (CPU budget for full-graph GAT training)
+  n_codes: 100             # top-n 3-char ICD-9 codes as multi-hot
+  pca_components: 16       # PCA dimension of the clinical-similarity view
+  te_smoothing: 30         # target-encoding smoothing strength
+
+split: {val: 0.15, test: 0.15}
+
+graph:
+  k_sim: 10
+  k_code: 5
+  k_group: 8
+
+model:                     # overwritten by results/uci/hpo/best_gat.json when present
+  hidden: 16
+  heads: 4
+  layers: 2
+  dropout: 0.5
+  edge_dropout: 0.2
+
+train:
+  lr: 0.001
+  weight_decay: 0.005
+  epochs: 300
+  patience: 60
+
+hpo:
+  n_trials: 24
+  max_epochs: 150
+  patience: 30
+  boosting_trials: 40
+
+tracking:
+  mlflow_uri: sqlite:///mlflow.db

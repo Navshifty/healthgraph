@@ -1,0 +1,70 @@
+
+=== experiment started 2026-10-14 10:28:37 ===
+C:\Users\Naveenya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.5) doesn't match a supported version!
+  warnings.warn(
+2026/10/14 10:28:46 INFO mlflow.tracking.fluent: Experiment with name 'healthgraph-synthetic' does not exist. Creating a new experiment.
+[experiment] synthetic: 6000 patients, prevalence 15.5%, tuned=False
+[graph] 227048 edges; clinical-similarity: x1.33, shared-diagnoses: x1.31, shared-provider: x1.54
+   seed 0 mlp: 174 epochs (11s) test AUROC 0.743 AUPRC 0.327
+   seed 0 gcn: 166 epochs (43s) test AUROC 0.766 AUPRC 0.329
+   seed 0 gat: 137 epochs (120s) test AUROC 0.771 AUPRC 0.328
+[seed 0] Logistic Regression=0.739  Random Forest=0.744  XGBoost=0.740  LightGBM=0.741  MLP (no graph)=0.743  GCN=0.766  HealthGAT=0.771  Oracle (true risk)=0.818
+E:\AML\lab\healthgraph\healthgraph\pipeline.py:145: FutureWarning: The NumPy global RNG was seeded by calling `np.random.seed`. In a future version this function will no longer use the global RNG. Pass `rng` explicitly to opt-in to the new behaviour and silence this warning.
+  shap.summary_plot(sv, data.x[sample], feature_names=names, max_display=20, show=False)
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791954258.117535    7552 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791954268.524237    7552 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+   seed 1 mlp: 150 epochs (11s) test AUROC 0.729 AUPRC 0.327
+   seed 1 gcn: 158 epochs (42s) test AUROC 0.769 AUPRC 0.400
+   seed 1 gat: 142 epochs (121s) test AUROC 0.772 AUPRC 0.396
+[seed 1] Logistic Regression=0.720  Random Forest=0.703  XGBoost=0.701  LightGBM=0.709  MLP (no graph)=0.729  GCN=0.769  HealthGAT=0.772  Oracle (true risk)=0.838
+   seed 2 mlp: 89 epochs (6s) test AUROC 0.738 AUPRC 0.336
+   seed 2 gcn: 146 epochs (36s) test AUROC 0.755 AUPRC 0.398
+   seed 2 gat: 152 epochs (130s) test AUROC 0.758 AUPRC 0.405
+[seed 2] Logistic Regression=0.740  Random Forest=0.748  XGBoost=0.738  LightGBM=0.736  MLP (no graph)=0.738  GCN=0.755  HealthGAT=0.758  Oracle (true risk)=0.822
+=== experiment EXIT 0 2026-10-14 10:41:06 ===
+
+=== ablation started 2026-10-14 10:41:06 ===
+C:\Users\Naveenya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.5) doesn't match a supported version!
+  warnings.warn(
+   ablation all relations: reused from experiment
+   ablation seed 0 without clinical-similarity: AUROC 0.775 AUPRC 0.342
+   ablation seed 0 without shared-diagnoses: AUROC 0.777 AUPRC 0.348
+   ablation seed 0 without shared-provider: AUROC 0.743 AUPRC 0.324
+   ablation seed 0 no edges (self-loops only): AUROC 0.745 AUPRC 0.331
+   ablation seed 1 without clinical-similarity: AUROC 0.773 AUPRC 0.405
+   ablation seed 1 without shared-diagnoses: AUROC 0.775 AUPRC 0.419
+   ablation seed 1 without shared-provider: AUROC 0.725 AUPRC 0.308
+   ablation seed 1 no edges (self-loops only): AUROC 0.731 AUPRC 0.337
+   ablation seed 2 without clinical-similarity: AUROC 0.769 AUPRC 0.428
+   ablation seed 2 without shared-diagnoses: AUROC 0.757 AUPRC 0.404
+   ablation seed 2 without shared-provider: AUROC 0.729 AUPRC 0.333
+   ablation seed 2 no edges (self-loops only): AUROC 0.740 AUPRC 0.341
+                             AUROC_mean  AUROC_std  AUPRC_mean  AUPRC_std
+variant                                                                  
+all relations                    0.7671     0.0075      0.3763     0.0417
+without clinical-similarity      0.7722     0.0029      0.3915     0.0445
+without shared-diagnoses         0.7697     0.0114      0.3902     0.0375
+without shared-provider          0.7323     0.0097      0.3214     0.0128
+no edges (self-loops only)       0.7389     0.0068      0.3362     0.0050
+=== ablation EXIT 0 2026-10-14 10:56:18 ===
+
+=== analyze started 2026-10-14 10:56:18 ===
+C:\Users\Naveenya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.5) doesn't match a supported version!
+  warnings.warn(
+# Analysis: synthetic
+
+## Test-set metrics (mean ± sd over seeds)
+
+| model               | AUROC         | AUPRC         | LogLoss       | Brier         | ECE           | F1            | Sensitivity   | Specificity   | PPV           | Top10%_capture   |
+|:--------------------|:--------------|:--------------|:--------------|:--------------|:--------------|:--------------|:--------------|:--------------|:--------------|:-----------------|
+| Logistic Regression | 0.733 ± 0.012 | 0.332 ± 0.010 | 0.385 ± 0.005 | 0.119 ± 0.002 | 0.019 ± 0.007 | 0.394 ± 0.016 | 0.627 ± 0.052 | 0.713 ± 0.065 | 0.289 ± 0.028 | 0.246 ± 0.023    |
+| Random Forest       | 0.732 ± 0.025 | 0.312 ± 0.040 | 0.388 ± 0.012 | 0.120 ± 0.004 | 0.025 ± 0.003 | 0.396 ± 0.019 | 0.651 ± 0.037 | 0.699 ± 0.039 | 0.285 ± 0.021 | 0.203 ± 0.028    |
+| XGBoost             | 0.726 ± 0.022 | 0.310 ± 0.019 | 0.390 ± 0.012 | 0.121 ± 0.003 | 0.020 ± 0.006 | 0.375 ± 0.014 | 0.620 ± 0.074 | 0.692 ± 0.055 | 0.271 ± 0.015 | 0.211 ± 0.022    |
+| LightGBM            | 0.729 ± 0.017 | 0.306 ± 0.016 | 0.389 ± 0.010 | 0.120 ± 0.003 | 0.017 ± 0.009 | 0.387 ± 0.014 | 0.493 ± 0.074 | 0.807 ± 0.049 | 0.323 ± 0.030 | 0.220 ± 0.033    |
+| MLP (no graph)      | 0.737 ± 0.007 | 0.330 ± 0.005 | 0.385 ± 0.003 | 0.119 ± 0.001 | 0.020 ± 0.010 | 0.397 ± 0.012 | 0.581 ± 0.104 | 0.751 ± 0.093 | 0.307 ± 0.038 | 0.244 ± 0.022    |
+| GCN                 | 0.763 ± 0.007 | 0.375 ± 0.040 | 0.373 ± 0.005 | 0.116 ± 0.001 | 0.024 ± 0.003 | 0.417 ± 0.014 | 0.596 ± 0.022 | 0.769 ± 0.004 | 0.321 ± 0.011 | 0.275 ± 0.058    |
+| HealthGAT           | 0.767 ± 0.008 | 0.376 ± 0.042 | 0.371 ± 0.004 | 0.116 ± 0.001 | 0.026 ± 0.007 | 0.415 ± 0.016 | 0.601 ± 0.013 | 0.762 ± 0.020 | 0.317 ± 0.018 | 0.280 ± 0.061    |
+| Oracle (true risk)  | 0.826 ± 0.011 | 0.506 ± 0.043 | 0.332 ± 0.010 | 0.102 ± 0.003 | 0.022 ± 0.002 | 0.357 ± 0.029 | 0.249 ± 0.021 | 0.973 ± 0.011 | 0.640 ± 0.101 | 0.344 ± 0.018    |
+=== analyze EXIT 0 2026-10-14 10:57:01 ===

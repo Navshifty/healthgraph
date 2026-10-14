@@ -1,0 +1,17 @@
+[data] uci_diabetes: 20000 patients, 179 features, prevalence 9.0%
+[graph] 595354 directed edges; per relation:
+   clinical-similarity  edges=268486  same-label=0.839  P(nbr+ | node+)=0.106  (base rate 0.090)
+   shared-diagnoses     edges=164124  same-label=0.840  P(nbr+ | node+)=0.104  (base rate 0.090)
+   shared-provider      edges=162744  same-label=0.841  P(nbr+ | node+)=0.093  (base rate 0.090)
+   ablation all relations: reused from results_uci/metrics_per_seed.csv
+   ablation without clinical-similarity: done
+   ablation without shared-diagnoses: done
+   ablation without shared-provider: done
+
+=== Relation ablation (HealthGAT) ===
+                                       AUROC            AUPRC
+model                                                        
+all relations                0.632 +/- 0.019  0.171 +/- 0.018
+without clinical-similarity  0.634 +/- 0.018  0.170 +/- 0.016
+without shared-diagnoses     0.631 +/- 0.004  0.172 +/- 0.019
+without shared-provider      0.630 +/- 0.012  0.167 +/- 0.017

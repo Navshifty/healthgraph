@@ -1,0 +1,53 @@
+,0
+age,0.36815438
+followup_scheduled,0.2868937
+prior_admissions_1y,0.19009006
+J45 Asthma,0.15182091
+K21 GERD,0.11622954
+med_reconciliation,0.075531244
+hemoglobin,0.07462342
+ed_visits_1y,0.06836489
+n_medications,0.06737464
+egfr,0.062432908
+hba1c,0.061256267
+los_days,0.06011944
+albumin,0.037109487
+creatinine,0.03493584
+bmi,0.034355942
+heart_rate,0.031272024
+sbp,0.030606117
+E78 Hyperlipidemia,0.028639229
+sodium,0.024813527
+E66 Obesity,0.023647169
+wbc,0.02349667
+F17 Nicotine dependence,0.016669327
+I10 Hypertension,0.012114056
+W19 Fall,0.011292365
+I25 Coronary artery disease,0.007983898
+C50 Breast cancer,0.007878533
+E11 Type 2 diabetes,0.0067751342
+D70 Neutropenia,0.005710085
+hba1c_missing,0.004677216
+K70 Alcoholic liver disease,0.004462581
+F03 Dementia,0.0039084856
+albumin_missing,0.003585368
+R64 Cachexia,0.0034216014
+C34 Lung cancer,0.0030824922
+lives_alone,0.0029924607
+F32 Depression,0.0029544607
+D63 Anemia in CKD,0.0029196048
+F10 Alcohol use disorder,0.002827191
+female,0.0025795256
+Z59 Housing instability,0.0024372893
+N18 Chronic kidney disease,0.0022612526
+medicaid,0.0019944746
+J44 COPD,0.0016101939
+J18 Pneumonia,0.0015617608
+J96 Respiratory failure,0.0014984399
+I48 Atrial fibrillation,0.001148742
+C18 Colon cancer,0.0008575401
+E87 Electrolyte disorder,0.0006925439
+R26 Gait abnormality,0.0004560787
+I50 Heart failure,0.00037551904
+M81 Osteoporosis,0.0
+Z91.1 Medication nonadherence,0.0

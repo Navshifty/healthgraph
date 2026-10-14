@@ -1,0 +1,48 @@
+[data] synthetic: 6000 patients, 52 features, prevalence 15.5%
+[graph] 227048 directed edges; per relation:
+   clinical-similarity  edges= 91448  same-label=0.769  P(nbr+ | node+)=0.207  (base rate 0.155)
+   shared-diagnoses     edges= 47278  same-label=0.744  P(nbr+ | node+)=0.203  (base rate 0.155)
+   shared-provider      edges= 88322  same-label=0.766  P(nbr+ | node+)=0.239  (base rate 0.155)
+   seed 0 mlp: 174 epochs, 10s
+   seed 0 gcn: 166 epochs, 37s
+   seed 0 gat: 137 epochs, 109s
+[seed 0] LogisticRegression: AUROC=0.737  GradientBoosting: AUROC=0.734  MLP (no graph): AUROC=0.743  GCN: AUROC=0.766  HealthGAT (rel-GATv2): AUROC=0.771  Oracle (true risk): AUROC=0.818
+   seed 1 mlp: 150 epochs, 9s
+   seed 1 gcn: 158 epochs, 36s
+   seed 1 gat: 142 epochs, 114s
+[seed 1] LogisticRegression: AUROC=0.718  GradientBoosting: AUROC=0.697  MLP (no graph): AUROC=0.729  GCN: AUROC=0.769  HealthGAT (rel-GATv2): AUROC=0.772  Oracle (true risk): AUROC=0.838
+   seed 2 mlp: 89 epochs, 5s
+   seed 2 gcn: 146 epochs, 33s
+   seed 2 gat: 151 epochs, 120s
+[seed 2] LogisticRegression: AUROC=0.738  GradientBoosting: AUROC=0.712  MLP (no graph): AUROC=0.738  GCN: AUROC=0.755  HealthGAT (rel-GATv2): AUROC=0.759  Oracle (true risk): AUROC=0.822
+
+=== Test-set results (mean +/- std over seeds) ===
+                                 AUROC            AUPRC            Brier              ECE               F1      Sensitivity              PPV   Top10%_capture
+model                                                                                                                                                        
+LogisticRegression     0.731 +/- 0.011  0.328 +/- 0.009  0.119 +/- 0.002  0.019 +/- 0.008  0.393 +/- 0.024  0.593 +/- 0.011  0.295 +/- 0.027  0.242 +/- 0.025
+GradientBoosting       0.714 +/- 0.019  0.304 +/- 0.015  0.122 +/- 0.002  0.024 +/- 0.007  0.369 +/- 0.012  0.526 +/- 0.110  0.291 +/- 0.036  0.206 +/- 0.012
+MLP (no graph)         0.737 +/- 0.007  0.330 +/- 0.005  0.119 +/- 0.001  0.020 +/- 0.010  0.397 +/- 0.012  0.581 +/- 0.104  0.307 +/- 0.038  0.244 +/- 0.022
+GCN                    0.763 +/- 0.007  0.375 +/- 0.040  0.116 +/- 0.001  0.024 +/- 0.003  0.417 +/- 0.014  0.596 +/- 0.022  0.321 +/- 0.011  0.275 +/- 0.058
+HealthGAT (rel-GATv2)  0.767 +/- 0.007  0.377 +/- 0.042  0.116 +/- 0.001  0.026 +/- 0.007  0.422 +/- 0.007  0.584 +/- 0.029  0.331 +/- 0.008  0.280 +/- 0.061
+Oracle (true risk)     0.826 +/- 0.011  0.506 +/- 0.043  0.102 +/- 0.003  0.022 +/- 0.002  0.357 +/- 0.029  0.249 +/- 0.021  0.640 +/- 0.101  0.344 +/- 0.018
+
+[attention share, event=1 test patients]
+clinical-similarity    0.335
+shared-diagnoses       0.213
+shared-provider        0.428
+self                   0.023
+[attention lift] {'to_positive_neighbours': 0.925, 'to_negative_neighbours': 1.017}
+   ablation all relations: done
+   ablation without clinical-similarity: done
+   ablation without shared-diagnoses: done
+   ablation without shared-provider: done
+
+=== Relation ablation (HealthGAT) ===
+                                       AUROC            AUPRC
+model                                                        
+all relations                0.767 +/- 0.007  0.377 +/- 0.042
+without clinical-similarity  0.772 +/- 0.003  0.392 +/- 0.044
+without shared-diagnoses     0.770 +/- 0.011  0.390 +/- 0.038
+without shared-provider      0.732 +/- 0.010  0.321 +/- 0.013
+
+Artifacts written to E:\AML\lab\healthgraph\results

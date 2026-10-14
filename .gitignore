@@ -1,0 +1,22 @@
+# LaTeX build intermediates
+*.npz
+*.pyc
+.pytest_cache/
+__pycache__/
+data/uci/*.csv
+docker_build.log
+mlflow.db
+mlruns/
+report/*.aux
+report/*.fdb_latexmk
+report/*.fls
+report/*.log
+report/*.out
+report/*.synctex.gz
+report/latex_build.log
+results/**/optuna.db
+results/healthgat.pt
+results_log.txt
+results_uci/
+results_uci_ablation_log.txt
+results_uci_log.txt

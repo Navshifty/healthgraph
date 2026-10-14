@@ -1,0 +1,14 @@
+\begin{table}[t]\centering\caption{Controlled synthetic study (6{,}000 patients, known ground-truth risk; mean$\pm$sd over 3 seeds).}\label{tab:syn}
+\footnotesize\setlength{\tabcolsep}{2.5pt}\begin{tabular}{lccccc}\toprule
+Model & AUROC & AUPRC & Brier & ECE & Top-10\% \\\midrule
+Logistic Regression & 0.733$\pm$0.012 & 0.332$\pm$0.010 & 0.119 & 0.019 & 0.246 \\
+Random Forest & 0.732$\pm$0.025 & 0.312$\pm$0.040 & 0.120 & 0.025 & 0.203 \\
+XGBoost & 0.726$\pm$0.022 & 0.310$\pm$0.019 & 0.121 & 0.020 & 0.211 \\
+LightGBM & 0.729$\pm$0.017 & 0.306$\pm$0.016 & 0.120 & \textbf{0.017} & 0.220 \\
+\midrule
+MLP (no graph) & 0.737$\pm$0.007 & 0.330$\pm$0.005 & 0.119 & 0.020 & 0.244 \\
+GCN & 0.763$\pm$0.007 & 0.375$\pm$0.040 & 0.116 & 0.024 & 0.275 \\
+\textbf{HealthGAT (ours)} & \textbf{0.767$\pm$0.008} & \textbf{0.376$\pm$0.042} & \textbf{0.116} & 0.026 & \textbf{0.280} \\
+\midrule
+\textit{Oracle (true risk)} & 0.826$\pm$0.011 & 0.506$\pm$0.043 & 0.102 & 0.022 & 0.344 \\
+\bottomrule\end{tabular}\end{table}

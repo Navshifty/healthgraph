@@ -1,0 +1,26 @@
+{
+  "share": {
+    "all": {
+      "clinical-similarity": 0.3528,
+      "shared-diagnoses": 0.1819,
+      "shared-provider": 0.4413,
+      "self": 0.0241
+    },
+    "event=1": {
+      "clinical-similarity": 0.3352,
+      "shared-diagnoses": 0.2134,
+      "shared-provider": 0.4284,
+      "self": 0.0229
+    },
+    "event=0": {
+      "clinical-similarity": 0.356,
+      "shared-diagnoses": 0.1761,
+      "shared-provider": 0.4436,
+      "self": 0.0243
+    }
+  },
+  "lift": {
+    "to_positive_neighbours": 0.9248392036603533,
+    "to_negative_neighbours": 1.0167694398046345
+  }
+}

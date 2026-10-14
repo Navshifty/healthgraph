@@ -1,0 +1,25 @@
+C:\Users\Naveenya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.5) doesn't match a supported version!
+  warnings.warn(
+E:\AML\lab\healthgraph\healthgraph\hpo.py:31: ExperimentalWarning: optuna.visualization.matplotlib._optimization_history.plot_optimization_history is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_optimization_history(study)
+E:\AML\lab\healthgraph\healthgraph\hpo.py:38: ExperimentalWarning: optuna.visualization.matplotlib._param_importances.plot_param_importances is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_param_importances(study)
+[hpo] lightgbm: best val AUPRC 0.1531 with {'learning_rate': 0.049846101320948265, 'num_leaves': 9, 'min_child_samples': 73, 'colsample_bytree': 0.7694465087327116, 'subsample': 0.6051912805369204, 'reg_lambda': 0.003777623466096864}
+E:\AML\lab\healthgraph\healthgraph\hpo.py:31: ExperimentalWarning: optuna.visualization.matplotlib._optimization_history.plot_optimization_history is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_optimization_history(study)
+E:\AML\lab\healthgraph\healthgraph\hpo.py:38: ExperimentalWarning: optuna.visualization.matplotlib._param_importances.plot_param_importances is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_param_importances(study)
+[hpo] xgboost: best val AUPRC 0.1588 with {'learning_rate': 0.016090121176658208, 'max_depth': 8, 'min_child_weight': 6.724540255568477, 'colsample_bytree': 0.8103471150103516, 'subsample': 0.5230510248253626, 'reg_lambda': 0.4402860027781945}
+E:\AML\lab\healthgraph\healthgraph\hpo.py:31: ExperimentalWarning: optuna.visualization.matplotlib._optimization_history.plot_optimization_history is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_optimization_history(study)
+E:\AML\lab\healthgraph\healthgraph\hpo.py:38: ExperimentalWarning: optuna.visualization.matplotlib._param_importances.plot_param_importances is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_param_importances(study)
+[hpo] rf: best val AUPRC 0.1487 with {'max_depth': 13, 'min_samples_leaf': 14, 'max_features': 0.5219343632501507}
+E:\AML\lab\healthgraph\healthgraph\hpo.py:31: ExperimentalWarning: optuna.visualization.matplotlib._optimization_history.plot_optimization_history is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_optimization_history(study)
+E:\AML\lab\healthgraph\healthgraph\hpo.py:38: ExperimentalWarning: optuna.visualization.matplotlib._param_importances.plot_param_importances is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_param_importances(study)
+[hpo] logreg: best val AUPRC 0.1415 with {'C': 0.003}
+   trial  1: val AUPRC 0.1417 (170s) {'hidden': 32, 'heads': 2, 'layers': 2, 'dropout': 0.45835764522666245, 'edge_dropout': 0.175034884505077, 'lr': 0.0036875080805223188, 'weight_decay': 0.016497453678198756, 'k_sim': 10, 'k_code': 5, 'k_group': 8}
+   trial  2: val AUPRC 0.1399 (193s) {'hidden': 32, 'heads': 2, 'layers': 2, 'dropout': 0.5122116705145822, 'edge_dropout': 0.04730977034757329, 'lr': 0.001815548915829232, 'weight_decay': 0.00021372740576773173, 'k_sim': 5, 'k_code': 5, 'k_group': 8}
+   trial  3: val AUPRC 0.1398 (321s) {'hidden': 32, 'heads': 2, 'layers': 2, 'dropout': 0.37481278151973657, 'edge_dropout': 0.27905247837090597, 'lr': 0.0003553920200230613, 'weight_decay': 0.0034217652568599957, 'k_sim': 5, 'k_code': 10, 'k_group': 4}

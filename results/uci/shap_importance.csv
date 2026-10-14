@@ -1,0 +1,190 @@
+,0
+discharge_disposition_id=1,0.055248078
+time_in_hospital,0.022012748
+diag_1_target_enc,0.019624274
+number_inpatient,0.019525515
+diag_3_target_enc,0.01882352
+num_lab_procedures,0.013042348
+diag_2_freq,0.012927604
+discharge_disposition_id=3,0.012311335
+discharge_disposition_id=22,0.010875544
+diag_2_target_enc,0.010857064
+ICD9 401,0.010846011
+number_diagnoses,0.01065305
+primary_dx=circulatory,0.009415947
+num_medications,0.008645876
+diag_3_freq,0.008502886
+medical_specialty_target_enc,0.008013799
+n_dx_circulatory,0.006681127
+diag_1_freq,0.006128286
+medical_specialty_freq,0.005162193
+admission_type_id=3,0.005092286
+total_prior_visits,0.0048580435
+age,0.0047006635
+num_procedures,0.0036854711
+A1Cresult=None,0.0035407527
+n_dx_other,0.0034436483
+ICD9 414,0.0030436139
+gender=Female,0.0029863568
+n_dx_respiratory,0.0027405522
+admission_type_id=1,0.0026673288
+ICD9 424,0.0023738157
+ICD9 428,0.002234909
+n_dose_changes,0.002234061
+n_diabetes_meds,0.0020742319
+A1Cresult=>8,0.0020643147
+admission_type_id=2,0.001842686
+n_dx_musculoskeletal,0.0017843379
+insulin=Steady,0.0016992345
+ICD9 427,0.0016277782
+n_dx_diabetes,0.0015768592
+discharge_disposition_id=25,0.001566412
+change=No,0.0015041066
+primary_dx=musculoskeletal,0.0014604961
+ICD9 786,0.0014016096
+insulin=No,0.001229448
+ICD9 434,0.0012122149
+race=AfricanAmerican,0.0011855486
+admission_source_id=7,0.0011528232
+ICD9 411,0.0011253832
+discharge_disposition_id=4,0.0010409403
+admission_source_id=4,0.00095376687
+A1Cresult=>7,0.0009521142
+admission_source_id=1,0.0009489226
+number_outpatient,0.00091645785
+primary_dx=genitourinary,0.00091039186
+ICD9 276,0.00089348096
+number_emergency,0.0008899588
+ICD9 780,0.00088522263
+ICD9 V45,0.00085502147
+A1Cresult=Norm,0.0008543795
+race=Caucasian,0.00084771623
+primary_dx=diabetes,0.0008087063
+ICD9 682,0.00076380005
+ICD9 584,0.0007009147
+n_dx_genitourinary,0.0006977842
+diabetesMed=Yes,0.000676844
+insulin=Down,0.0006373477
+discharge_disposition_id=5,0.00063670287
+insulin=Up,0.0006359207
+n_dx_injury,0.0006238258
+ICD9 403,0.0005928057
+discharge_disposition_id=2,0.00058979617
+ICD9 715,0.0005879549
+max_glu_serum=None,0.0005610191
+ICD9 272,0.00052375713
+primary_dx=respiratory,0.0004998422
+primary_dx=injury,0.0004997252
+primary_dx=other,0.0004852713
+change=Ch,0.00047887748
+discharge_disposition_id=7,0.00047132556
+n_dx_neoplasms,0.00046677905
+ICD9 425,0.0004461312
+primary_dx=digestive,0.00039287578
+primary_dx=neoplasms,0.00038540966
+ICD9 599,0.00037733384
+n_dx_digestive,0.00037451187
+ICD9 486,0.00035672428
+ICD9 493,0.0003452903
+ICD9 198,0.0003413714
+discharge_disposition_id=23,0.00033142391
+discharge_disposition_id=18,0.00033087502
+ICD9 305,0.0003268387
+ICD9 491,0.00032144398
+ICD9 433,0.0003203965
+ICD9 577,0.00031645913
+ICD9 707,0.0003139439
+race=Other,0.00031169923
+ICD9 440,0.0003106726
+admission_source_id=6,0.00028909073
+ICD9 41,0.00028800106
+ICD9 285,0.00028677913
+admission_type_id=5,0.0002797011
+max_glu_serum=>200,0.0002571458
+discharge_disposition_id=6,0.00025629863
+ICD9 562,0.00022565202
+ICD9 38,0.00021639644
+ICD9 789,0.00020804786
+ICD9 435,0.00020417833
+admission_type_id=6,0.00019765002
+ICD9 413,0.00019670746
+ICD9 787,0.00018651865
+race=nan,0.00016767398
+ICD9 574,0.0001501704
+ICD9 560,0.00014739885
+admission_source_id=5,0.0001420855
+ICD9 518,0.00011994261
+ICD9 426,0.00011263569
+ICD9 404,0.0001117072
+ICD9 585,0.00011043419
+ICD9 250,9.578802e-05
+ICD9 162,2.618106e-05
+race=Hispanic,0.0
+gender=Male,0.0
+race=Asian,0.0
+admission_source_id=20,0.0
+admission_type_id=8,0.0
+max_glu_serum=>300,0.0
+admission_source_id=9,0.0
+admission_source_id=3,0.0
+max_glu_serum=Norm,0.0
+admission_source_id=2,0.0
+admission_source_id=17,0.0
+diabetesMed=No,0.0
+ICD9 496,0.0
+ICD9 530,0.0
+ICD9 998,0.0
+ICD9 278,0.0
+ICD9 996,0.0
+ICD9 410,0.0
+ICD9 820,0.0
+ICD9 402,0.0
+ICD9 722,0.0
+ICD9 295,0.0
+ICD9 578,0.0
+ICD9 997,0.0
+ICD9 511,0.0
+ICD9 785,0.0
+ICD9 571,0.0
+ICD9 V57,0.0
+ICD9 197,0.0
+ICD9 535,0.0
+ICD9 788,0.0
+ICD9 453,0.0
+ICD9 648,0.0
+ICD9 V58,0.0
+ICD9 458,0.0
+ICD9 280,0.0
+ICD9 296,0.0
+ICD9 244,0.0
+ICD9 724,0.0
+ICD9 287,0.0
+ICD9 415,0.0
+ICD9 507,0.0
+ICD9 593,0.0
+ICD9 569,0.0
+ICD9 8,0.0
+ICD9 784,0.0
+ICD9 70,0.0
+ICD9 733,0.0
+ICD9 799,0.0
+ICD9 294,0.0
+ICD9 438,0.0
+ICD9 558,0.0
+ICD9 466,0.0
+ICD9 396,0.0
+ICD9 790,0.0
+ICD9 590,0.0
+ICD9 357,0.0
+ICD9 812,0.0
+ICD9 536,0.0
+ICD9 730,0.0
+ICD9 300,0.0
+ICD9 V15,0.0
+ICD9 303,0.0
+ICD9 331,0.0
+ICD9 553,0.0
+ICD9 153,0.0
+ICD9 412,0.0
+ICD9 342,0.0
+ICD9 592,0.0

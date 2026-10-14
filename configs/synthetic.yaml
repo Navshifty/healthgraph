@@ -1,0 +1,23 @@
+# Controlled study: synthetic EHR with known ground-truth risk.
+experiment: synthetic
+output_dir: results/synthetic
+seeds: [0, 1, 2]
+
+data:
+  source: synthetic
+  n_patients: 6000
+  n_providers: 120
+  prevalence: 0.15
+
+split: {val: 0.15, test: 0.15}
+
+graph: {k_sim: 10, k_code: 5, k_group: 8}
+
+model: {hidden: 16, heads: 4, layers: 2, dropout: 0.5, edge_dropout: 0.2}
+
+train: {lr: 0.001, weight_decay: 0.005, epochs: 300, patience: 60}
+
+hpo: {n_trials: 20, max_epochs: 150, patience: 30, boosting_trials: 30}
+
+tracking:
+  mlflow_uri: sqlite:///mlflow.db

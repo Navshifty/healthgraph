@@ -1,0 +1,29 @@
+\begin{table}[t]\centering\caption{Comparison with published results. Our tuned models are re-run under each evaluation protocol (mean$\pm$sd AUROC, 3 seeds). P1 reproduces the published protocol.}\label{tab:bench}\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llc}\toprule Source / protocol & Model & AUROC \\\midrule
+\multirow{4}{*}{\parbox{2.6cm}{Emi-Johnson \& Nkrumah 2025 [Cureus]~\cite{emijohnson2025}}} & XGBoost & 0.667 \\
+ & Logistic Regression & 0.642 \\
+ & Random Forest & 0.630 \\
+ & Deep neural network & 0.579 \\
+\midrule
+\multirow{5}{*}{\parbox{2.6cm}{Salim \& Ibrahim 2026 [Healthcare]~\cite{salim2026}}} & XGBoost (tuned) & 0.664 \\
+ & LightGBM & 0.660 \\
+ & Logistic Regression & 0.657 \\
+ & Random Forest & 0.650 \\
+ & Stacking ensemble & 0.665 \\
+\midrule
+\multirow{3}{*}{\parbox{2.6cm}{P1: all enc., random split (ours)}} & Logistic Regression & 0.672$\pm$0.002 \\
+ & XGBoost & 0.681$\pm$0.004 \\
+ & LightGBM & 0.681$\pm$0.002 \\
+\midrule
+\multirow{3}{*}{\parbox{2.6cm}{P2: all enc., patient-grouped (ours)}} & Logistic Regression & 0.676$\pm$0.009 \\
+ & XGBoost & 0.680$\pm$0.005 \\
+ & LightGBM & 0.690$\pm$0.010 \\
+\midrule
+\multirow{3}{*}{\parbox{2.6cm}{P3: strict cohort (full) (ours)}} & Logistic Regression & 0.652$\pm$0.007 \\
+ & XGBoost & 0.649$\pm$0.008 \\
+ & LightGBM & 0.655$\pm$0.006 \\
+\midrule
+\multirow{3}{*}{\parbox{2.6cm}{P4: strict cohort (20k) (ours)}} & Logistic Regression & 0.644$\pm$0.020 \\
+ & XGBoost & 0.616$\pm$0.030 \\
+ & LightGBM & 0.629$\pm$0.017 \\
+\bottomrule\end{tabular}\end{table}

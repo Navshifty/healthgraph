@@ -1,0 +1,6 @@
+*
+!healthgraph/
+!app/
+!artifacts/healthgat_uci.pt
+!requirements-serve.txt
+**/__pycache__

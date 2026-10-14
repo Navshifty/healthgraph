@@ -1,0 +1,12 @@
+\begin{table*}[t]\centering\caption{Test-set results on UCI Diabetes-130 (strict cohort, 20k patients; mean$\pm$sd over 3 seeds; best per column in bold).}\label{tab:main}
+\begin{tabular}{lccccccccc}\toprule
+Model & AUROC & AUPRC & LogLoss & Brier & ECE & F1 & Sens. & PPV & Top-10\% \\\midrule
+Logistic Regression & \textbf{0.644$\pm$0.020} & 0.153$\pm$0.019 & \textbf{0.291} & 0.080 & 0.006 & 0.222 & \textbf{0.520} & 0.142 & 0.195 \\
+Random Forest & 0.633$\pm$0.021 & \textbf{0.167$\pm$0.020} & 0.291 & \textbf{0.080} & 0.006 & 0.215 & 0.491 & 0.138 & 0.219 \\
+XGBoost & 0.616$\pm$0.030 & 0.156$\pm$0.015 & 0.294 & 0.080 & \textbf{0.003} & 0.202 & 0.477 & 0.131 & 0.197 \\
+LightGBM & 0.629$\pm$0.017 & 0.159$\pm$0.016 & 0.292 & 0.080 & 0.006 & 0.213 & 0.457 & 0.141 & \textbf{0.219} \\
+\midrule
+MLP (no graph) & 0.642$\pm$0.019 & 0.154$\pm$0.017 & 0.292 & 0.080 & 0.006 & \textbf{0.229} & 0.489 & \textbf{0.153} & 0.208 \\
+GCN & 0.638$\pm$0.027 & 0.149$\pm$0.018 & 0.292 & 0.080 & 0.006 & 0.216 & 0.476 & 0.140 & 0.190 \\
+\textbf{HealthGAT (ours)} & 0.635$\pm$0.028 & 0.151$\pm$0.015 & 0.292 & 0.080 & 0.005 & 0.214 & 0.492 & 0.137 & 0.204 \\
+\bottomrule\end{tabular}\end{table*}

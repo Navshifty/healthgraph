@@ -1,0 +1,163 @@
+C:\Users\Naveenya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.5) doesn't match a supported version!
+  warnings.warn(
+E:\AML\lab\healthgraph\healthgraph\hpo.py:31: ExperimentalWarning: optuna.visualization.matplotlib._optimization_history.plot_optimization_history is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_optimization_history(study)
+E:\AML\lab\healthgraph\healthgraph\hpo.py:38: ExperimentalWarning: optuna.visualization.matplotlib._param_importances.plot_param_importances is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_param_importances(study)
+[hpo] lightgbm: best val AUPRC 0.1531 with {'learning_rate': 0.049846101320948265, 'num_leaves': 9, 'min_child_samples': 73, 'colsample_bytree': 0.7694465087327116, 'subsample': 0.6051912805369204, 'reg_lambda': 0.003777623466096864}
+E:\AML\lab\healthgraph\healthgraph\hpo.py:31: ExperimentalWarning: optuna.visualization.matplotlib._optimization_history.plot_optimization_history is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_optimization_history(study)
+E:\AML\lab\healthgraph\healthgraph\hpo.py:38: ExperimentalWarning: optuna.visualization.matplotlib._param_importances.plot_param_importances is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_param_importances(study)
+[hpo] xgboost: best val AUPRC 0.1588 with {'learning_rate': 0.016090121176658208, 'max_depth': 8, 'min_child_weight': 6.724540255568477, 'colsample_bytree': 0.8103471150103516, 'subsample': 0.5230510248253626, 'reg_lambda': 0.4402860027781945}
+E:\AML\lab\healthgraph\healthgraph\hpo.py:31: ExperimentalWarning: optuna.visualization.matplotlib._optimization_history.plot_optimization_history is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_optimization_history(study)
+E:\AML\lab\healthgraph\healthgraph\hpo.py:38: ExperimentalWarning: optuna.visualization.matplotlib._param_importances.plot_param_importances is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_param_importances(study)
+[hpo] rf: best val AUPRC 0.1487 with {'max_depth': 13, 'min_samples_leaf': 14, 'max_features': 0.5219343632501507}
+E:\AML\lab\healthgraph\healthgraph\hpo.py:31: ExperimentalWarning: optuna.visualization.matplotlib._optimization_history.plot_optimization_history is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_optimization_history(study)
+E:\AML\lab\healthgraph\healthgraph\hpo.py:38: ExperimentalWarning: optuna.visualization.matplotlib._param_importances.plot_param_importances is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_param_importances(study)
+[hpo] logreg: best val AUPRC 0.1415 with {'C': 0.003}
+   trial  5: val AUPRC 0.1417 (179s) {'hidden': 32, 'heads': 2, 'layers': 2, 'dropout': 0.45835764522666245, 'edge_dropout': 0.175034884505077, 'lr': 0.0036875080805223188, 'weight_decay': 0.016497453678198756, 'k_sim': 10, 'k_code': 5, 'k_group': 8}
+   trial  6: val AUPRC 0.1400 (201s) {'hidden': 32, 'heads': 2, 'layers': 2, 'dropout': 0.5122116705145822, 'edge_dropout': 0.04730977034757329, 'lr': 0.001815548915829232, 'weight_decay': 0.00021372740576773173, 'k_sim': 5, 'k_code': 5, 'k_group': 8}
+   trial 11: val AUPRC 0.1409 (486s) {'hidden': 32, 'heads': 4, 'layers': 3, 'dropout': 0.31897478034205345, 'edge_dropout': 0.3255191278809909, 'lr': 0.0009153586678700254, 'weight_decay': 0.010652336715354227, 'k_sim': 10, 'k_code': 10, 'k_group': 0}
+   trial 12: val AUPRC 0.1462 (291s) {'hidden': 32, 'heads': 2, 'layers': 3, 'dropout': 0.4563859900265162, 'edge_dropout': 0.3615994584176009, 'lr': 0.004451261182477411, 'weight_decay': 0.0018104426893023073, 'k_sim': 10, 'k_code': 5, 'k_group': 8}
+   trial 13: val AUPRC 0.1420 (163s) {'hidden': 32, 'heads': 2, 'layers': 2, 'dropout': 0.38472128365875674, 'edge_dropout': 0.19482506914013453, 'lr': 0.0033414727936437053, 'weight_decay': 0.0012749732347050898, 'k_sim': 10, 'k_code': 5, 'k_group': 8}
+   trial 15: val AUPRC 0.1429 (291s) {'hidden': 32, 'heads': 2, 'layers': 3, 'dropout': 0.37719267928895334, 'edge_dropout': 0.21966584760792485, 'lr': 0.0028211196078814695, 'weight_decay': 0.0007931703317964379, 'k_sim': 10, 'k_code': 5, 'k_group': 8}
+E:\AML\lab\healthgraph\healthgraph\hpo.py:31: ExperimentalWarning: optuna.visualization.matplotlib._optimization_history.plot_optimization_history is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_optimization_history(study)
+E:\AML\lab\healthgraph\healthgraph\hpo.py:38: ExperimentalWarning: optuna.visualization.matplotlib._param_importances.plot_param_importances is experimental (supported from v2.2.0). The interface can change in the future.
+  ax = optuna.visualization.matplotlib.plot_param_importances(study)
+[hpo] gat: best val AUPRC 0.1462 with {'hidden': 32, 'heads': 2, 'layers': 3, 'dropout': 0.4563859900265162, 'edge_dropout': 0.3615994584176009, 'lr': 0.004451261182477411, 'weight_decay': 0.0018104426893023073, 'k_sim': 10, 'k_code': 5, 'k_group': 8}
+[experiment] uci_diabetes: 20000 patients, prevalence 9.0%, tuned=True
+[graph] 604990 edges; clinical-similarity: x1.13, shared-diagnoses: x1.08, shared-provider: x1.01
+   seed 0 mlp: 152 epochs (41s) test AUROC 0.655 AUPRC 0.173
+   seed 0 gcn: 98 epochs (104s) test AUROC 0.657 AUPRC 0.168
+   seed 0 gat: 99 epochs (337s) test AUROC 0.657 AUPRC 0.167
+[seed 0] Logistic Regression=0.658  Random Forest=0.650  XGBoost=0.632  LightGBM=0.646  MLP (no graph)=0.655  GCN=0.657  HealthGAT=0.657
+E:\AML\lab\healthgraph\healthgraph\pipeline.py:144: FutureWarning: The NumPy global RNG was seeded by calling `np.random.seed`. In a future version this function will no longer use the global RNG. Pass `rng` explicitly to opt-in to the new behaviour and silence this warning.
+  shap.summary_plot(sv, data.x[sample], feature_names=names, max_display=20, show=False)
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791943980.770104   14348 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791943993.807373   14348 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[export] deployment bundle -> artifacts\healthgat_uci.pt
+   seed 1 mlp: 137 epochs (42s) test AUROC 0.620 AUPRC 0.140
+   seed 1 gcn: 177 epochs (221s) test AUROC 0.607 AUPRC 0.131
+   seed 1 gat: 166 epochs (581s) test AUROC 0.604 AUPRC 0.139
+[seed 1] Logistic Regression=0.621  Random Forest=0.609  XGBoost=0.581  LightGBM=0.612  MLP (no graph)=0.620  GCN=0.607  HealthGAT=0.604
+   seed 2 mlp: 93 epochs (24s) test AUROC 0.651 AUPRC 0.150
+   seed 2 gcn: 102 epochs (111s) test AUROC 0.649 AUPRC 0.149
+   seed 2 gat: 106 epochs (368s) test AUROC 0.645 AUPRC 0.147
+[seed 2] Logistic Regression=0.653  Random Forest=0.640  XGBoost=0.636  LightGBM=0.630  MLP (no graph)=0.651  GCN=0.649  HealthGAT=0.645
+   ablation all relations: reused from experiment
+   ablation seed 0 without clinical-similarity: AUROC 0.640 AUPRC 0.154
+   ablation seed 0 without shared-diagnoses: AUROC 0.655 AUPRC 0.166
+   ablation seed 0 without shared-provider: AUROC 0.656 AUPRC 0.167
+   ablation seed 0 no edges (self-loops only): AUROC 0.659 AUPRC 0.167
+=== resumed Wed Oct 14 09:16:23 IST 2026 ===
+C:\Users\Naveenya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.5) doesn't match a supported version!
+  warnings.warn(
+   ablation all relations: reused from experiment
+   ablation: resuming, 4 runs already done
+   ablation seed 1 without clinical-similarity: AUROC 0.590 AUPRC 0.123
+^C
+=== ablation started 2026-10-14 10:02:17 ===
+C:\Users\Naveenya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.5) doesn't match a supported version!
+  warnings.warn(
+   ablation all relations: reused from experiment
+   ablation: resuming, 5 runs already done
+   ablation seed 1 without shared-diagnoses: AUROC 0.621 AUPRC 0.144
+   ablation seed 1 without shared-provider: AUROC 0.607 AUPRC 0.139
+   ablation seed 1 no edges (self-loops only): AUROC 0.616 AUPRC 0.142
+   ablation seed 2 without clinical-similarity: AUROC 0.643 AUPRC 0.152
+   ablation seed 2 without shared-diagnoses: AUROC 0.646 AUPRC 0.149
+   ablation seed 2 without shared-provider: AUROC 0.652 AUPRC 0.149
+   ablation seed 2 no edges (self-loops only): AUROC 0.645 AUPRC 0.151
+                             AUROC_mean  AUROC_std  AUPRC_mean  AUPRC_std
+variant                                                                  
+all relations                    0.6354     0.0275      0.1508     0.0146
+without clinical-similarity      0.6246     0.0297      0.1427     0.0174
+without shared-diagnoses         0.6408     0.0175      0.1532     0.0113
+without shared-provider          0.6383     0.0268      0.1517     0.0138
+no edges (self-loops only)       0.6400     0.0217      0.1536     0.0126
+=== ablation EXIT 0 2026-10-14 10:24:53 ===
+
+=== analyze started 2026-10-14 10:24:53 ===
+C:\Users\Naveenya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.5) doesn't match a supported version!
+  warnings.warn(
+# Analysis: uci_diabetes
+
+## Test-set metrics (mean ± sd over seeds)
+
+| model               | AUROC         | AUPRC         | LogLoss       | Brier         | ECE           | F1            | Sensitivity   | Specificity   | PPV           | Top10%_capture   |
+|:--------------------|:--------------|:--------------|:--------------|:--------------|:--------------|:--------------|:--------------|:--------------|:--------------|:-----------------|
+| Logistic Regression | 0.644 ± 0.020 | 0.153 ± 0.019 | 0.291 ± 0.003 | 0.080 ± 0.001 | 0.006 ± 0.003 | 0.222 ± 0.015 | 0.520 ± 0.059 | 0.686 ± 0.066 | 0.142 ± 0.015 | 0.195 ± 0.022    |
+| Random Forest       | 0.633 ± 0.021 | 0.167 ± 0.020 | 0.291 ± 0.003 | 0.080 ± 0.001 | 0.006 ± 0.004 | 0.215 ± 0.020 | 0.491 ± 0.049 | 0.695 ± 0.042 | 0.138 ± 0.016 | 0.219 ± 0.010    |
+| XGBoost             | 0.616 ± 0.030 | 0.156 ± 0.015 | 0.294 ± 0.004 | 0.080 ± 0.001 | 0.003 ± 0.003 | 0.202 ± 0.023 | 0.477 ± 0.108 | 0.671 ± 0.135 | 0.131 ± 0.024 | 0.197 ± 0.033    |
+| LightGBM            | 0.629 ± 0.017 | 0.159 ± 0.016 | 0.292 ± 0.002 | 0.080 ± 0.000 | 0.006 ± 0.003 | 0.213 ± 0.018 | 0.457 ± 0.129 | 0.724 ± 0.090 | 0.141 ± 0.010 | 0.219 ± 0.023    |
+| MLP (no graph)      | 0.642 ± 0.019 | 0.154 ± 0.017 | 0.292 ± 0.002 | 0.080 ± 0.000 | 0.006 ± 0.005 | 0.229 ± 0.021 | 0.489 ± 0.121 | 0.717 ± 0.137 | 0.153 ± 0.027 | 0.208 ± 0.035    |
+| GCN                 | 0.638 ± 0.027 | 0.149 ± 0.018 | 0.292 ± 0.004 | 0.080 ± 0.001 | 0.006 ± 0.001 | 0.216 ± 0.020 | 0.476 ± 0.074 | 0.713 ± 0.026 | 0.140 ± 0.010 | 0.190 ± 0.043    |
+| HealthGAT           | 0.635 ± 0.028 | 0.151 ± 0.015 | 0.292 ± 0.004 | 0.080 ± 0.001 | 0.005 ± 0.002 | 0.214 ± 0.024 | 0.492 ± 0.013 | 0.690 ± 0.051 | 0.137 ± 0.019 | 0.204 ± 0.026    |
+=== analyze EXIT 0 2026-10-14 10:25:35 ===
+
+=== benchmark started 2026-10-14 10:25:35 ===
+C:\Users\Naveenya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.5) doesn't match a supported version!
+  warnings.warn(
+[benchmark] P1 all encounters, random split (published protocol): 101766 encounters, 71518 patients, prevalence 0.112
+   logreg   seed 0: AUROC 0.674 AUPRC 0.211 (train/test patient overlap 5101)
+   xgboost  seed 0: AUROC 0.678 AUPRC 0.221 (train/test patient overlap 5101)
+   lightgbm seed 0: AUROC 0.681 AUPRC 0.225 (train/test patient overlap 5101)
+   logreg   seed 1: AUROC 0.671 AUPRC 0.211 (train/test patient overlap 5045)
+   xgboost  seed 1: AUROC 0.679 AUPRC 0.228 (train/test patient overlap 5045)
+   lightgbm seed 1: AUROC 0.679 AUPRC 0.229 (train/test patient overlap 5045)
+   logreg   seed 2: AUROC 0.671 AUPRC 0.210 (train/test patient overlap 4994)
+   xgboost  seed 2: AUROC 0.686 AUPRC 0.227 (train/test patient overlap 4994)
+   lightgbm seed 2: AUROC 0.684 AUPRC 0.226 (train/test patient overlap 4994)
+[benchmark] P2 all encounters, patient-grouped split: 101766 encounters, 71518 patients, prevalence 0.112
+   logreg   seed 0: AUROC 0.670 AUPRC 0.201 (train/test patient overlap 0)
+   xgboost  seed 0: AUROC 0.676 AUPRC 0.216 (train/test patient overlap 0)
+   lightgbm seed 0: AUROC 0.682 AUPRC 0.222 (train/test patient overlap 0)
+   logreg   seed 1: AUROC 0.672 AUPRC 0.218 (train/test patient overlap 0)
+   xgboost  seed 1: AUROC 0.677 AUPRC 0.219 (train/test patient overlap 0)
+   lightgbm seed 1: AUROC 0.688 AUPRC 0.234 (train/test patient overlap 0)
+   logreg   seed 2: AUROC 0.687 AUPRC 0.224 (train/test patient overlap 0)
+   xgboost  seed 2: AUROC 0.686 AUPRC 0.231 (train/test patient overlap 0)
+   lightgbm seed 2: AUROC 0.700 AUPRC 0.243 (train/test patient overlap 0)
+[benchmark] P3 strict cohort (first encounter), full: 69973 encounters, 69973 patients, prevalence 0.090
+   logreg   seed 0: AUROC 0.651 AUPRC 0.161 (train/test patient overlap 0)
+   xgboost  seed 0: AUROC 0.644 AUPRC 0.164 (train/test patient overlap 0)
+   lightgbm seed 0: AUROC 0.653 AUPRC 0.166 (train/test patient overlap 0)
+   logreg   seed 1: AUROC 0.659 AUPRC 0.161 (train/test patient overlap 0)
+   xgboost  seed 1: AUROC 0.658 AUPRC 0.172 (train/test patient overlap 0)
+   lightgbm seed 1: AUROC 0.662 AUPRC 0.176 (train/test patient overlap 0)
+   logreg   seed 2: AUROC 0.645 AUPRC 0.165 (train/test patient overlap 0)
+   xgboost  seed 2: AUROC 0.645 AUPRC 0.159 (train/test patient overlap 0)
+   lightgbm seed 2: AUROC 0.649 AUPRC 0.168 (train/test patient overlap 0)
+[benchmark] P4 strict cohort, 20k subsample (graph cohort): 20000 encounters, 20000 patients, prevalence 0.090
+   logreg   seed 0: AUROC 0.658 AUPRC 0.169 (train/test patient overlap 0)
+   xgboost  seed 0: AUROC 0.632 AUPRC 0.157 (train/test patient overlap 0)
+   lightgbm seed 0: AUROC 0.646 AUPRC 0.176 (train/test patient overlap 0)
+   logreg   seed 1: AUROC 0.621 AUPRC 0.133 (train/test patient overlap 0)
+   xgboost  seed 1: AUROC 0.581 AUPRC 0.140 (train/test patient overlap 0)
+   lightgbm seed 1: AUROC 0.612 AUPRC 0.144 (train/test patient overlap 0)
+   logreg   seed 2: AUROC 0.653 AUPRC 0.156 (train/test patient overlap 0)
+   xgboost  seed 2: AUROC 0.636 AUPRC 0.170 (train/test patient overlap 0)
+   lightgbm seed 2: AUROC 0.630 AUPRC 0.157 (train/test patient overlap 0)
+                                                                               n    overlap  AUROC_mean  AUROC_std  AUPRC_mean  AUPRC_std
+protocol                                             model                                                                               
+P1 all encounters, random split (published protocol) Logistic Regression  101766  5046.6667      0.6718     0.0019      0.2108     0.0009
+                                                     XGBoost              101766  5046.6667      0.6807     0.0043      0.2256     0.0037
+                                                     LightGBM             101766  5046.6667      0.6813     0.0023      0.2268     0.0023
+P2 all encounters, patient-grouped split             Logistic Regression  101766     0.0000      0.6765     0.0094      0.2144     0.0116
+                                                     XGBoost              101766     0.0000      0.6797     0.0051      0.2220     0.0081
+                                                     LightGBM             101766     0.0000      0.6902     0.0095      0.2330     0.0102
+P3 strict cohort (first encounter), full             Logistic Regression   69973     0.0000      0.6516     0.0068      0.1623     0.0022
+                                                     XGBoost               69973     0.0000      0.6493     0.0078      0.1650     0.0063
+                                                     LightGBM              69973     0.0000      0.6547     0.0063      0.1700     0.0051
+P4 strict cohort, 20k subsample (graph cohort)       Logistic Regression   20000     0.0000      0.6439     0.0201      0.1526     0.0186
+                                                     XGBoost               20000     0.0000      0.6163     0.0304      0.1559     0.0154
+                                                     LightGBM              20000     0.0000      0.6292     0.0173      0.1590     0.0159
+=== benchmark EXIT 0 2026-10-14 10:28:37 ===

@@ -1,0 +1,8 @@
+\begin{table}[t]\centering\caption{Relation ablation for HealthGAT on UCI (retrained per variant, 3 seeds).}\label{tab:abl}\footnotesize
+\begin{tabular}{lcc}\toprule Variant & AUROC & AUPRC \\\midrule
+all relations & 0.635$\pm$0.028 & 0.151$\pm$0.015 \\
+without clinical-similarity & 0.625$\pm$0.030 & 0.143$\pm$0.017 \\
+without shared-diagnoses & 0.641$\pm$0.017 & 0.153$\pm$0.011 \\
+without shared-provider & 0.638$\pm$0.027 & 0.152$\pm$0.014 \\
+no edges (self-loops only) & 0.640$\pm$0.022 & 0.154$\pm$0.013 \\
+\bottomrule\end{tabular}\end{table}
