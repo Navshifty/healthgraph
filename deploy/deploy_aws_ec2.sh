@@ -21,6 +21,12 @@ export AWS_DEFAULT_REGION="$REGION"
 if [[ $DESTROY == 1 ]]; then
   IIDS=$(aws ec2 describe-instances --filters Name=tag:Project,Values=healthgraph \
          Name=instance-state-name,Values=pending,running,stopping,stopped --query 'Reservations[].Instances[].InstanceId' --output text)
+  # Release the Elastic IP first: an unattached Elastic IP is billed by the hour.
+  for A in $(aws ec2 describe-addresses --filters Name=tag:Project,Values=healthgraph --query 'Addresses[].AllocationId' --output text); do
+    ASSOC=$(aws ec2 describe-addresses --allocation-ids "$A" --query 'Addresses[0].AssociationId' --output text)
+    [[ "$ASSOC" != "None" ]] && aws ec2 disassociate-address --association-id "$ASSOC"
+    aws ec2 release-address --allocation-id "$A"
+  done
   [[ -n "$IIDS" ]] && aws ec2 terminate-instances --instance-ids $IIDS >/dev/null && aws ec2 wait instance-terminated --instance-ids $IIDS
   SG=$(aws ec2 describe-security-groups --filters Name=group-name,Values=healthgraph-web --query 'SecurityGroups[0].GroupId' --output text)
   [[ "$SG" != "None" ]] && aws ec2 delete-security-group --group-id "$SG"

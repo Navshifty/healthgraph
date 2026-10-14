@@ -446,12 +446,12 @@ same process. The
 Docker image (\texttt{python:3.12-slim}, CPU PyTorch, pinned dependencies, non-root UID 1000,
 port 7860, health check; 2.15\,GB) was built and tested locally (health check passing, valid
 predictions, 422 on invalid input). It is deployed on \textbf{AWS EC2} (free-tier t3.micro,
-Amazon Linux 2023, ap-south-1) by one script (\texttt{deploy/deploy\_aws\_ec2.sh}). The script
+Amazon Linux 2023, ap-south-1, with an Elastic IP for a fixed address) by one script (\texttt{deploy/deploy\_aws\_ec2.sh}). The script
 uploads the build context to a private S3 bucket and creates a security group that opens only
 HTTP. The instance's first-boot script adds 2\,GB of swap (the service needs about 0.6\,GB of the
 instance's 1\,GB RAM), installs Docker, builds the image and runs it with automatic restart. The
 live service returns the same prediction as the local container, in about 0.4\,s per request.
-Live UI: \url{http://15.252.73.160/ui}; API documentation: \url{http://15.252.73.160/docs}.
+Live UI: \url{http://3.7.153.70/ui}; API documentation: \url{http://3.7.153.70/docs}.
 A Hugging Face Spaces configuration is also provided, since Docker Spaces now require a paid plan.
 
 \begin{figure*}[t]\centering

@@ -139,8 +139,8 @@ const children = [
   H("7. Deployment"),
   BUL("**API:** FastAPI with endpoints POST /predict, POST /predict/batch, GET /model/info, GET /health; Pydantic validation rejects invalid inputs (HTTP 422)."),
   BUL("**Web UI:** Gradio form showing the calibrated risk, risk band, the patient's risk drivers and the most similar past patients."),
-  BUL("**Container & cloud:** Docker image (non-root, health check) deployed on AWS EC2 free tier (t3.micro, Mumbai region); ≈0.4 s per prediction."),
-  BUL("**Live link:** http://15.252.73.160/ui   ·   **Code:** https://github.com/Navshifty/healthgraph"),
+  BUL("**Container & cloud:** Docker image (non-root, health check) deployed on AWS EC2 free tier (t3.micro, Mumbai region, fixed Elastic IP); ≈0.4 s per prediction."),
+  BUL("**Live link:** http://3.7.153.70/ui   ·   **Code:** https://github.com/Navshifty/healthgraph"),
   ...FIGURE(path.join(ROOT, "report/figures/ui_screenshot.png"), 4.6, "HealthGraph web UI on AWS: input form, calibrated risk, risk drivers and similar past patients"),
 
   H("8. Result"),
